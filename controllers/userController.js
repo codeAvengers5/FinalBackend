@@ -13,7 +13,7 @@ exports.registerUser = async (req, res) => {
     }
     console.log(existingUser);
     console.log(email)
-    //insert
+    //insert the user
     try {
     const newUser = await User.create(req.body );
     await newUser.save();
